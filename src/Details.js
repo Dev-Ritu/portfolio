@@ -3,7 +3,7 @@
 import logogradient from "./assets/logo.svg";
 import logo from "./assets/logo2.svg";
 // Profile Image
-import profile from "./assets/projects/RITU_IMG.png";
+import profile from "./assets/projects/Ritu.png";
 // Tech stack images
 import html from "./assets/techstack/html.png";
 import css from "./assets/techstack/css.png";
@@ -24,12 +24,6 @@ import sourceTree from "./assets/techstack/sourcetree.png";
 import fork from "./assets/techstack/fork.png";
 
 // Porject Images
-import projectImage1 from "./assets/projects/project1.jpg";
-import projectImage2 from "./assets/projects/project2.jpg";
-import projectImage3 from "./assets/projects/project3.jpg";
-import projectImage4 from "./assets/projects/project4.jpg";
-import projectImage5 from "./assets/projects/project5.jpg";
-import projectImage6 from "./assets/projects/project6.jpg";
 import tavaTrip from "./assets/projects/taav-trip.png";
 import tavaCloud from "./assets/projects/tava_cloud.png";
 import understory from "./assets/projects/understory.png";

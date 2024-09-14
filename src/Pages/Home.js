@@ -46,8 +46,7 @@ function Home() {
       .from(
         myimageref.current,
         {
-          x: "200%",
-          delay: 0.5,
+          x: "100%",
           opacity: 0,
           duration: 2,
           ease: "Power3.easeOut",
@@ -57,7 +56,7 @@ function Home() {
   }, []);
 
   return (
-    <main className="container mx-auto max-width section md:flex justify-between items-center">
+    <main className="container mx-auto max-width section md:flex justify-between items-center h-full">
       <div>
         <h1
           ref={h11}
@@ -78,8 +77,15 @@ function Home() {
           {tagline}
         </h2>
       </div>
-      <div className="mt-5 md:mt-0 rounded-full overflow-hidden border-4 bg-gradient-to-b from-gray-200 to-transparent border-gradient-to-b from-gray-200 to-blue-300">
-        <img ref={myimageref} className="w-full md:ml-auto" src={img} alt="Ritu Kumari" />
+      <div
+        ref={myimageref}
+        className="mt-5 md:mt-0 rounded-full overflow-hidden border-4 bg-gradient-to-b from-gray-200 to-transparent border-gradient-to-b from-gray-200 to-blue-300"
+      >
+        <img
+          className="w-96 h-96 md:ml-auto rounded-full object-cover"
+          src={img}
+          alt="Ritu Kumari"
+        />
       </div>
     </main>
   );

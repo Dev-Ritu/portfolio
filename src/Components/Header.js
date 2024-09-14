@@ -4,7 +4,16 @@ import { logos, socialMediaUrl } from "../Details";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const { linkdein, github, twitter } = socialMediaUrl;
+  const { linkdein, github } = socialMediaUrl;
+  const [selectedTab, setSelectedTab] = useState("Home");
+  const headerList = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Technologies", link: "/technologies" },
+    { name: "Projects", link: "/projects" },
+    { name: "Contact", link: "/contact" },
+  ];
+
   const toggleClass = () => {
     setIsOpen(!isOpen);
   };
@@ -16,32 +25,19 @@ function Header() {
           !isOpen ? "hidden" : null
         } text-center md:flex justify-between sticky-top`}
       >
-        <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/" onClick={toggleClass}>
-              Home
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/about" onClick={toggleClass}>
-              About
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/technologies" onClick={toggleClass}>
-              Technologies
-            </NavLink>
-          </li>
-          <li className="pb-1 md:pb-0">
-            <NavLink to="/projects" onClick={toggleClass}>
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" onClick={toggleClass}>
-              Contact
-            </NavLink>
-          </li>
+        <ul className="dark:text-light-content text-xl font-bold md:flex items-center md:space-x-5 md:mr-10">
+          {headerList.map(({ name, link }) => (
+            <li
+              className={`pb-1 md:pb-0 hover:text-blue-300 ${
+                selectedTab === name ? "text-gradient" : ""
+              }`}
+              onClick={() => setSelectedTab(name)}
+            >
+              <NavLink to={link} onClick={toggleClass}>
+                {name}
+              </NavLink>
+            </li>
+          ))}
         </ul>
         <ul className="flex justify-end items-center my-5 md:my-0 md:space-x-5 md:mr-5">
           <li>

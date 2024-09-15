@@ -19,16 +19,17 @@ function Header() {
   };
 
   return (
-    <header className="container mx-auto md:flex justify-between py-2 max-width">
+    <header className="container md:flex justify-between max-width  md:bg-transparent bg-white  sticky top-0 z-50 shadow-lg">
       <nav
         className={` ${
-          !isOpen ? "hidden" : null
-        } text-center md:flex justify-between sticky-top`}
+          // !isOpen ? "hidden" : null"
+          ""
+        } text-center flex justify-between mx-auto  py-2`}
       >
-        <ul className="dark:text-light-content text-xl font-bold md:flex items-center md:space-x-5 md:mr-10">
+        <ul className="dark:text-light-content text-sm md:text-xl  font-bold flex items-center space-x-2 md:space-x-5 md:mr-10">
           {headerList.map(({ name, link }) => (
             <li
-              className={`pb-1 md:pb-0 hover:text-blue-300 ${
+              className={`pb-1 md:pb-0 hover:text-blue-600 ${
                 selectedTab === name ? "text-gradient" : ""
               }`}
               onClick={() => setSelectedTab(name)}
@@ -39,7 +40,7 @@ function Header() {
             </li>
           ))}
         </ul>
-        <ul className="flex justify-end items-center my-5 md:my-0 md:space-x-5 md:mr-5">
+        <ul className="flex justify-end items-center  my-2 md:my-5 md:my-0 md:space-x-5 md:mr-5">
           <li>
             <a href={linkdein} target="_blank" rel="noreferrer noopener">
               <svg

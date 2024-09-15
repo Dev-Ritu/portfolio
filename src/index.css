@@ -30,6 +30,13 @@ body {
   background: url("assets/projects/sidebg.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    background: url("assets/projects/white.jpg");
+    background-size: auto;
+    
+  }
+}
 
 Projects {
   background: url("assets/projects/project3.jpg") no-repeat center center fixed;

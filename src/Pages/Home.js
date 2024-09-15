@@ -79,10 +79,10 @@ function Home() {
       </div>
       <div
         ref={myimageref}
-        className="mt-5 md:mt-0 rounded-full overflow-hidden border-4 bg-gradient-to-b from-gray-200 to-transparent border-gradient-to-b from-gray-200 to-blue-300"
+        className="mt-5 md:mt-0 rounded-full md:w-96 md:h-96 h-40 w-40 overflow-hidden border-4 bg-gradient-to-b from-gray-200 to-transparent border-gradient-to-b from-gray-200 to-blue-300 shadow-lg"
       >
         <img
-          className="w-96 h-96 md:ml-auto rounded-full object-cover"
+          className="h-full w-full md:ml-auto rounded-full object-cover"
           src={img}
           alt="Ritu Kumari"
         />

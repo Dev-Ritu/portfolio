@@ -19,14 +19,11 @@ function Header() {
   };
 
   return (
-    <header className="container md:flex justify-between max-width  md:bg-transparent bg-white  sticky top-0 z-50 shadow-lg">
+    <header className=" flex-start width-full bg-white sticky top-0 z-50 shadow-lg">
       <nav
-        className={` ${
-          // !isOpen ? "hidden" : null"
-          ""
-        } text-center flex justify-between mx-auto  py-2`}
+        className={` text-center flex justify-between mx-auto py-2 px-10`}
       >
-        <ul className="dark:text-light-content text-xs  md:text-xl  font-bold flex items-center space-x-2 md:space-x-5 md:mr-10">
+        <ul className="dark:text-light-content text-xs md:text-xl  font-bold flex items-center space-x-2 md:space-x-5 md:mr-10">
           {headerList.map(({ name, link }) => (
             <li
               className={`pb-1 md:pb-0 hover:text-blue-600  ${

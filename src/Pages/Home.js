@@ -60,7 +60,7 @@ function Home() {
       <div>
         <h1
           ref={h11}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-2xl text-dark-heading  md:text-4xl xl:text-5xl xl:leading-tight font-bold"
         >
           Hi,👋<br></br>My Name is<br></br>
         </h1>
@@ -72,7 +72,7 @@ function Home() {
         </h1>
         <h2
           ref={h13}
-          className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-2xl text-dark-heading  md:text-4xl xl:text-5xl xl:leading-tight font-bold"
         >
           {tagline}
         </h2>

@@ -19,12 +19,12 @@ function Technologies() {
     fork,
     nodejs,
     sourceTree,
-    agGrid
+    agGrid,
   } = techStackDetails;
   return (
     <main className="container mx-auto max-width pt-10 pb-20 ">
       <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-2xl text-dark-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           Tech Stack
         </h1>
         <p className="text-content py-2 lg:max-w-3xl">
@@ -44,7 +44,7 @@ function Technologies() {
         <img src={agGrid} title="Ag-Grid" alt="ag-grid" />
       </section>
       <section>
-        <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+        <h1 className="text-2xl pt-10 text-dark-heading  md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           Tools
         </h1>
       </section>
@@ -52,7 +52,13 @@ function Technologies() {
         <img src={vscode} title="Visual Studio Code" alt="" />
         <img src={github} title="Github" alt="Github" />
         <img src={figma} title="Figma" alt="Figma" />
-        <img src={sourceTree} title="Source-tree" alt="source-tree" height={100} width={100} />
+        <img
+          src={sourceTree}
+          title="Source-tree"
+          alt="source-tree"
+          height={100}
+          width={100}
+        />
         <img src={fork} title="Fork" alt="fork" />
         <img src={npm} title="NPM" alt="NPM" />
         <img src={postman} title="Postman" alt="Postman" />

@@ -26,11 +26,11 @@ function Header() {
           ""
         } text-center flex justify-between mx-auto  py-2`}
       >
-        <ul className="dark:text-light-content text-sm md:text-xl  font-bold flex items-center space-x-2 md:space-x-5 md:mr-10">
+        <ul className="dark:text-light-content text-xs  md:text-xl  font-bold flex items-center space-x-2 md:space-x-5 md:mr-10">
           {headerList.map(({ name, link }) => (
             <li
-              className={`pb-1 md:pb-0 hover:text-blue-600 ${
-                selectedTab === name ? "text-gradient" : ""
+              className={`pb-1 md:pb-0 hover:text-blue-600  ${
+                selectedTab === name ? "text-gradient" : "text-black"
               }`}
               onClick={() => setSelectedTab(name)}
             >
@@ -44,7 +44,7 @@ function Header() {
           <li>
             <a href={linkdein} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className="fill-dark-heading"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"
@@ -58,7 +58,7 @@ function Header() {
           <li>
             <a href={github} target="_blank" rel="noreferrer noopener">
               <svg
-                className="dark:fill-light-heading fill-dark-heading"
+                className=" fill-dark-heading"
                 width="30"
                 height="30"
                 viewBox="0 0 30 30"

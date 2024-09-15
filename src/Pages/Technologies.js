@@ -27,7 +27,7 @@ function Technologies() {
         <h1 className="text-2xl text-dark-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
           Tech Stack
         </h1>
-        <p className="text-content py-2 lg:max-w-3xl">
+        <p className="text-content py-2 lg:max-w-3xl text-gray-800">
           Technologies I've been working with recently
         </p>
       </section>

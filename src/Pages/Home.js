@@ -60,26 +60,26 @@ function Home() {
       <div>
         <h1
           ref={h11}
-          className="text-2xl text-dark-heading  md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-4xl text-dark-heading  xl:text-5xl xl:leading-tight font-bold"
         >
           Hi,👋<br></br>My Name is<br></br>
         </h1>
         <h1
           ref={h12}
-          className="text-2xl bg-clip-text bg-gradient text-transparent md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className=" bg-clip-text bg-gradient text-transparent text-4xl xl:text-5xl xl:leading-tight font-bold"
         >
           {name}
         </h1>
         <h2
           ref={h13}
-          className="text-2xl text-dark-heading  md:text-4xl xl:text-5xl xl:leading-tight font-bold"
+          className="text-dark-heading  text-4xl xl:text-5xl xl:leading-tight font-bold"
         >
           {tagline}
         </h2>
       </div>
       <div
         ref={myimageref}
-        className="mt-5 md:mt-0 rounded-full md:w-96 md:h-96 h-40 w-40 overflow-hidden border-4 bg-gradient-to-b from-gray-200 to-transparent border-gradient-to-b from-gray-200 to-blue-300 shadow-lg"
+        className="mt-5 md:mt-0 rounded-full md:w-96 md:h-96 h-60 w-60 overflow-hidden border-4 bg-gradient-to-b from-gray-200 to-transparent border-gradient-to-b from-gray-200 to-blue-300 shadow-lg"
       >
         <img
           className="h-full w-full md:ml-auto rounded-full object-cover"

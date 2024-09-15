@@ -4,7 +4,7 @@ function Work({ position, company, location, type, duration }) {
   return (
     <article className="pt-8 border-b-2 border-dark-content pb-5 dark:border-light-content border-opacity-20 dark:border-opacity-20">
       <div className="flex justify-between items-center">
-        <h1 className="text-content md:text-lg lg:text-xl text-bold">{position}</h1>
+        <h1 className="text-content md:text-lg lg:text-xl text-bold text-gray-800">{position}</h1>
         <div className="btn bg-greenbg text-green-text text-xs inline-block rounded-3xl px-3 py-1 min-w-fit">
           {type}
         </div>
@@ -13,7 +13,7 @@ function Work({ position, company, location, type, duration }) {
         <div className="flex flex-col md:flex-row">
           <div className="flex items-center pr-5">
             <svg
-              className="dark:fill-light-heading fill-dark-heading min-w-fit"
+              className="fill-dark-heading min-w-fit"
               width="16"
               height="12"
               viewBox="0 0 16 12"
@@ -26,7 +26,7 @@ function Work({ position, company, location, type, duration }) {
           </div>
           <div className="flex items-center">
             <svg
-              className="dark:fill-light-heading fill-dark-heading min-w-fit"
+              className="fill-dark-heading min-w-fit"
               width="16"
               height="12"
               viewBox="0 0 16 12"

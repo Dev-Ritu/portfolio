@@ -23,7 +23,7 @@ function Header() {
       <nav
         className={` text-center flex justify-between mx-auto py-2 px-10`}
       >
-        <ul className="dark:text-light-content text-xs md:text-xl  font-bold flex items-center space-x-2 md:space-x-5 md:mr-10">
+        <ul className="dark:text-light-content text-xs md:text-xl font-bold flex items-center space-x-2 md:space-x-5 md:mr-10 mr-5 ">
           {headerList.map(({ name, link }) => (
             <li
               className={`pb-1 md:pb-0 hover:text-blue-600  ${

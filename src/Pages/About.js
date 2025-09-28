@@ -1,8 +1,9 @@
-import React from "react";
+import React, { } from "react";
 import Work from "../Components/Work";
 import { personalDetails, workDetails, eduDetails } from "../Details";
 
 function About() {
+
   return (
     <main className="container mx-auto max-width pt-10 pb-20 ">
       <section>

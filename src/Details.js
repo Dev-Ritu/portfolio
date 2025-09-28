@@ -51,11 +51,11 @@ export const socialMediaUrl = {
 // Enter your Work Experience here
 export const workDetails = [
   {
-    Position: "Software Developer",
-    Company: `Innostax Software Lab Pvt Lmt`,
-    Location: "Gurugram",
+    Position: "Software Engineer",
+    Company: `Quarks Technosoft Pvt Lmt`,
+    Location: "Noida",
     Type: "Full Time",
-    Duration: "Aug 2022 - Present",
+    Duration: "March 2025 - Present",
   },
 ];
 
@@ -127,6 +127,6 @@ robust search functionalities, optimizing performance for a seamless booking exp
 
 // Enter your Contact Details here
 export const contactDetails = {
-  email: "ritikasinha9958@gmail.com",
+  email: "ritu.1706kumari@gmail.com",
   phone: "+91 7011315746",
 };
